@@ -8,9 +8,9 @@ const Navbar = () => {
                     <Link to='/home' className='text-2xl font-bold uppercase hover:underline'>PharmaHub</Link>
                     <div className='flex gap-4'>
                         <Link to='/produtos' className='hover:underline'>Produtos</Link>
-                        <Link to='/categoria' className='hover:underline'>Categoria</Link>
-                        <Link to='/cadastrarcategoria' className='hover:underline'>Cadastrar Categoria</Link>
-                        <Link to='/cadastrarprodutos' className='hover:underline'>Cadastrar Produtos</Link>
+                        <Link to='/categorias' className='hover:underline'>Categoria</Link>
+                        <Link to='/cadastrarCategoria' className='hover:underline'>Cadastrar Categoria</Link>
+                        <Link to='/cadastrarProduto' className='hover:underline'>Cadastrar Produtos</Link>
                     </div>
                 </div>
             </div>
