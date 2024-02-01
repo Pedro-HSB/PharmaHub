@@ -9,7 +9,7 @@ function CardPostagens({ post }: CardProdutoProps) {
   return (
     <div className='border-slate-900 border flex flex-col rounded overflow-hidden justify-between'>
       <div>
-        <div className="flex w-full bg-red-400 py-2 px-4 items-center gap-4">
+        <div className="flex w-full bg-emerald-400 py-2 px-4 items-center gap-4">
           <img src={post.foto} className='h-12 rounded-full' alt="" />
           <h3 className='text-lg font-bold text-center uppercase '>{post.nome}</h3>
         </div>
@@ -20,10 +20,10 @@ function CardPostagens({ post }: CardProdutoProps) {
         </div>
       </div>
       <div className="flex">
-        <Link to={`/editarProduto/${post.id}`} className='w-full text-white bg-red-400 hover:bg-red-800 flex items-center justify-center py-2'>
+        <Link to={`/editarProduto/${post.id}`} className='w-full text-white bg-emerald-400 hover:bg-emerald-800 flex items-center justify-center py-2'>
           <button>Editar</button>
         </Link>
-        <Link to={`/deletarProduto/${post.id}`} className='text-white bg-pink-400 hover:bg-pink-700 w-full flex items-center justify-center'>
+        <Link to={`/deletarProduto/${post.id}`} className='text-white bg-red-400 hover:bg-red-700 w-full flex items-center justify-center'>
           <button>Deletar</button>
         </Link>
       </div>

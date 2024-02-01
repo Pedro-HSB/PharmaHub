@@ -94,6 +94,10 @@ function FormProduto() {
         e.preventDefault()
         setIsLoading(true)
 
+        if(Produto.foto === ""){
+            Produto.foto = "https://ik.imagekit.io/vzr6ryejm/produto_06.png?updatedAt=1704637055383"
+        }
+
         if (id !== undefined) {
             try {
                 await atualizar(`/produtos`, Produto, setProduto)
@@ -165,7 +169,6 @@ function FormProduto() {
                         name='foto'
                         className="border-2 border-slate-700 rounded p-2"
                         value={Produto.foto}
-                        required
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                     />
                 </div>
@@ -183,8 +186,7 @@ function FormProduto() {
                 </div>
                 <button
                     disabled={carregandoCategoria}
-                    className="rounded disabled:bg-slate-200 text-slate-100 bg-red-400 
-                               hover:bg-red-800 w-1/2 py-2 mx-auto flex justify-center"
+                    className="rounded disabled:bg-slate-200 text-slate-100 bg-emerald-400 hover:bg-emerald-800 w-1/2 py-2 mx-auto flex justify-center"
                     type="submit">
 
                     {isLoading ?

@@ -4,7 +4,7 @@ function Home() {
 
     return (
         <>
-            <div id="container" className="flex justify-center bg-red-200">
+            <div id="container" className="flex justify-center bg-emerald-400">
                 <div id="subcontainer" className=" container  grid  grid-cols-2  text-white
                     ">
                     <div id="texto" className="flex flex-col gap-4 items-center justify-center  py-4 ">

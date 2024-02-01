@@ -14,9 +14,9 @@ function DeletarCategoria() {
 
     async function buscarPorId(id: string) {
         try {
-            await buscar(`/Categorias/${id}`, setCategoria)
+            await buscar(`/categorias/${id}`, setCategoria)
         } catch (error: any) {
-                ToastAlert('Tente novamente Mais Tarde', "info")
+            ToastAlert('Tente novamente Mais Tarde', "info")
         }
     }
 
@@ -33,7 +33,7 @@ function DeletarCategoria() {
 
     async function deletarCategoria() {
         try {
-            await deletar(`/Categorias/${id}`)
+            await deletar(`/categorias/${id}`)
 
             ToastAlert('Categoria apagado com sucesso', "sucesso")
 
@@ -53,8 +53,8 @@ function DeletarCategoria() {
                 <header className='py-2 px-6 bg-red-200 text-white font-bold text-2xl'>Categoria</header>
                 <p className='p-8 text-3xl bg-slate-200 h-full'>{Categoria.nome}</p>
                 <div className="flex">
-                    <button className='text-slate-100 bg-red-400 hover:bg-red-600 w-full py-2' onClick={retornar}>Não</button>
-                    <button className='w-full text-slate-100 bg-pink-400 hover:bg-pink-600 flex items-center justify-center' onClick={deletarCategoria}>
+                    <button className='text-slate-100 bg-emerald-400 hover:bg-red-600 w-full py-2' onClick={retornar}>Não</button>
+                    <button className='w-full text-slate-100 bg-red-400 hover:bg-pink-600 flex items-center justify-center' onClick={deletarCategoria}>
                         Sim
                     </button>
                 </div>

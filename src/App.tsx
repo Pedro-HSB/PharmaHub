@@ -20,6 +20,7 @@ function App() {
         <div className="min-h-[80vh] p-1">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/produtos" element={<ListaProdutos />} />
             <Route path="/cadastrarProduto" element={<FormProduto />} />
             <Route path="/editarProduto/:id" element={<FormProduto />} />

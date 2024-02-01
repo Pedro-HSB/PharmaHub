@@ -15,10 +15,10 @@ function CardCategorias({ post }: CardCategoriaProps) {
         </div>
       </div>
       <div className="flex">
-        <Link to={`/editarCategoria/${post.id}`} className='w-full text-white bg-red-400 hover:bg-red-700 flex items-center justify-center py-2'>
+        <Link to={`/editarCategoria/${post.id}`} className='w-full text-white bg-emerald-400 hover:bg-red-700 flex items-center justify-center py-2'>
           <button>Editar</button>
         </Link>
-        <Link to={`/deletarCategoria/${post.id}`} className='text-white bg-pink-400 hover:bg-pink-700 w-full flex items-center justify-center'>
+        <Link to={`/deletarCategoria/${post.id}`} className='text-white bg-red-400 hover:bg-red-700 w-full flex items-center justify-center'>
           <button>Deletar</button>
         </Link>
       </div>

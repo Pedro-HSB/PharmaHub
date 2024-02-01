@@ -49,12 +49,14 @@ function DeletarProduto() {
             <p className='text-center font-semibold mb-4'>Você tem certeza de que deseja apagar o Produto a seguir?</p>
 
             <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
-                <header className='py-2 px-6 bg-red-200 text-white font-bold text-2xl'>Produto</header>
-                <p className='p-8 text-3xl bg-slate-200 h-full'>{Produto.nome}</p>
-                <p className='p-8 text-3xl bg-slate-200 h-full'>{Produto.preco}</p>
+                <header className='py-2 px-6 bg-emerald-400 text-white font-bold text-2xl'>Produto</header>
+                <div className='bg-emerald-200'>
+                    <p className='p-8 text-3xl flex h-full'><img src={Produto.foto} className='h-28 mr-8 rounded-full ' alt="" />{Produto.nome}</p>
+                    <p className='p-8 text-3xl h-full'>Preco: {Produto.preco}</p>
+                </div>
                 <div className="flex">
-                    <button className='text-slate-100 bg-red-400 hover:bg-red-600 w-full py-2' onClick={retornar}>Não</button>
-                    <button className='w-full text-slate-100 bg-pink-400 hover:bg-pink-600 flex items-center justify-center' onClick={deletarProduto}>
+                    <button className='text-slate-100 bg-emerald-400 hover:bg-emerald-800 w-full py-2' onClick={retornar}>Não</button>
+                    <button className='w-full text-slate-100 bg-red-400 hover:bg-red-700 flex items-center justify-center' onClick={deletarProduto}>
                         Sim
                     </button>
                 </div>
